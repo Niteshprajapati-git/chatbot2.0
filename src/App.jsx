@@ -21,7 +21,7 @@ function App() {
     setConversation((prev) => [...prev, userMessage]);
     setQuestion("");
 
-    const botMessage = { sender: "Bot", text: "Thinking...", floating: true, imageUrl: "public/image.png" };
+    const botMessage = { sender: "Bot", text: "Thinking...", floating: true, imageUrl: "/chatbot2.0/image.png" };
     setConversation((prev) => [...prev, botMessage]);
 
     try {
@@ -69,7 +69,7 @@ function App() {
     <div className="app">
       <header>
         <div className="logo-header">
-          <img src="public/image.png" alt="logo" className="logo" />
+          <img src="/chatbot2.0/image.png" alt="logo" className="logo" />
           <h1> Chatbot</h1>
         </div>
       </header>
